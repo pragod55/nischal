@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Pro - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: url('fitness-background.jpg') no-repeat center center/cover;
+            background-attachment: fixed;
+            color: #fff;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 50px;
+            font-weight: 700;
+            color: #ff6600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 20px;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        .search-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search-bar {
+            padding: 15px;
+            border-radius: 25px;
+            border: none;
+            width: 40%;
+            font-size: 16px;
+        }
+
+        .search-button {
+            padding: 15px 20px;
+            background-color: #ff6600;
+            border: none;
+            color: white;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: transform 0.3s;
+        }
+
+        .search-button i {
+            margin-right: 10px;
+        }
+
+        .search-button:hover {
+            transform: translateY(-5px);
+        }
+
+        .container {
+            margin-top: 50px;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ff6600;
+            font-size: 16px;
+        }
+
+        th {
+            background-color: #ff6600;
+            color: white;
+        }
+
+        td {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+        }
+
+        td:hover {
+            background-color: #ff6600;
+            color: black;
+            cursor: pointer;
+        }
+
+        .cta-btn {
+            padding: 15px 25px;
+            background-color: #ff6600;
+            color: white;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-btn i {
+            margin-right: 10px;
+        }
+
+        .cta-btn:hover {
+            background-color: #e55b00;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Fitness Pro</h1>
+        <p>Stay Fit, Stay Strong, Transform Your Body</p>
+
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search for workouts, fitness tips...">
+            <button class="search-button"><i class="fa fa-search"></i>Search</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Fitness Programs</h2>
+        <table>
+            <tr>
+                <th>Program</th>
+                <th>Description</th>
+                <th>Duration</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>Weight Training</td>
+                <td>Aimed at increasing muscle mass and strength.</td>
+                <td>6 Weeks</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>Cardio Fitness</td>
+                <td>Improving endurance and cardiovascular health.</td>
+                <td>4 Weeks</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>Yoga for Flexibility</td>
+                <td>A sequence of poses to enhance flexibility and balance.</td>
+                <td>8 Weeks</td>
+                <td>Beginner to Advanced</td>
+            </tr>
+            <tr>
+                <td>HIIT (High-Intensity Interval Training)</td>
+                <td>A fast-paced workout to burn fat and improve fitness quickly.</td>
+                <td>5 Weeks</td>
+                <td>Advanced</td>
+            </tr>
+        </table>
+
+        <button class="cta-btn"><i class="fa fa-user-plus"></i>Join Now</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Fitness Pro | All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>
